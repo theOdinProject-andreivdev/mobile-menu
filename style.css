@@ -1,0 +1,37 @@
+.container {
+  position: fixed;
+  display: grid;
+  grid-template-columns: auto 100%;
+  grid-template-rows: 1;
+  height: 100%;
+  width: 100%;
+}
+
+.mobileMenu {
+  background-color: blanchedalmond;
+  font-size: larger;
+  padding: 10px;
+}
+
+.mobileMenuItem {
+  white-space: nowrap;
+  font-size: small;
+  animation: grow 1.5s forwards;
+}
+
+.mobileMenuItem:hover {
+  border-bottom: 1px solid black;
+}
+
+@keyframes grow {
+  from {
+    padding-right: 0px;
+  }
+  to {
+    padding-right: 50px;
+  }
+}
+
+.content {
+  padding: 10px;
+}
